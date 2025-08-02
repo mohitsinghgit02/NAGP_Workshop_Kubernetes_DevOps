@@ -7,7 +7,7 @@ This repository contains the complete codebase for the Workshop on Kubernetes & 
 
 ## 🔗 Repository
 
-> [GitHub Repository](https://github.com/mohitsinghgit02/NAGP_Workshop_Kubernetes_DevOps.git)  
+> [My GitHub Repository](https://github.com/mohitsinghgit02/NAGP_Workshop_Kubernetes_DevOps.git)  
 This repository hosts the code for Workshop on Kubernetes & DevOps
 . It includes the backend API, database integration, and containerized deployment
 
@@ -21,3 +21,38 @@ You can pull the image using:
 
 ```bash
 docker pull mohitsinghhub/k8s-multi-tier-api:v3
+
+
+## 🌐 Service API Tier
+Use the following endpoint to view the records from the backend tier:
+
+```bash
+http://<your-ingress-domain-or-ip>/api/items
+
+## 🚀 How to Run
+
+1. **Build Docker Image:**
+   ```bash
+   kubectl apply -f k8s-gcp/
+
+2. ** SQL script to create tables and insert initial records **
+    
+    ```bash
+    kubectl get pods -l app=postgres
+    kubectl exec -it <postgres-pod-name> -- bash
+
+3. ** Login to PostgreSQL CLI **
+
+    ```bash
+    psql -U <postgres-user> -d <database-name>
+
+    CREATE TABLE items (
+        id SERIAL PRIMARY KEY,
+        name VARCHAR(100),
+        description TEXT
+    );
+
+    INSERT INTO items (name, description) VALUES
+        ('Laptop', 'A portable computer'),
+        ('Phone', 'A smart mobile device'),
+        ('Tablet', 'A touchscreen device');
