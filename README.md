@@ -28,19 +28,19 @@ Use the following endpoint to view the records from the backend tier:
 
 ```bash
 http://<your-ingress-domain-or-ip>/api/items
-
+```
 ## 🚀 How to Run
 
 1. **Build Docker Image:**
    ```bash
    kubectl apply -f k8s-gcp/
-
+   ```
 2. ** SQL script to create tables and insert initial records **
     
     ```bash
     kubectl get pods -l app=postgres
     kubectl exec -it <postgres-pod-name> -- bash
-
+    ```
 3. ** Login to PostgreSQL CLI **
 
     ```bash
@@ -56,3 +56,4 @@ http://<your-ingress-domain-or-ip>/api/items
         ('Laptop', 'A portable computer'),
         ('Phone', 'A smart mobile device'),
         ('Tablet', 'A touchscreen device');
+    ```
