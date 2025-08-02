@@ -21,7 +21,7 @@ You can pull the image using:
 
 ```bash
 docker pull mohitsinghhub/k8s-multi-tier-api:v3
-
+```
 
 ## 🌐 Service API Tier
 Use the following endpoint to view the records from the backend tier:
@@ -35,13 +35,13 @@ http://<your-ingress-domain-or-ip>/api/items
    ```bash
    kubectl apply -f k8s-gcp/
    ```
-2. ** SQL script to create tables and insert initial records **
+2. **SQL script to create tables and insert initial records**
     
     ```bash
     kubectl get pods -l app=postgres
     kubectl exec -it <postgres-pod-name> -- bash
     ```
-3. ** Login to PostgreSQL CLI **
+3. **Login to PostgreSQL CLI**
 
     ```bash
     psql -U <postgres-user> -d <database-name>
