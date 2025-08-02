@@ -59,4 +59,4 @@ http://<your-ingress-domain-or-ip>/api/items
     ```
 
 ## 🎬 Screen Recording Video
- [Link to the video showing all objects deployed in Kubernetes cluster](https://github.com/mohitsinghgit02/NAGP_Workshop_Kubernetes_DevOps.git)
+ [Link to the video showing all objects deployed in Kubernetes cluster](https://nagarro-my.sharepoint.com/:u:/r/personal/mohit_singh02_nagarro_com/Documents/NAGP-2025/Mohit_Kumar_Singh_3211145_Kubernetes_and_DevOps_Advance.zip?csf=1&web=1&e=BXigeR)
