@@ -35,13 +35,13 @@ http://<your-ingress-domain-or-ip>/api/items
    ```bash
    kubectl apply -f k8s-gcp/
    ```
-2. **SQL script to create tables and insert initial records**
+2. **Login to PostgreSQL POD CLI**
     
     ```bash
     kubectl get pods -l app=postgres
     kubectl exec -it <postgres-pod-name> -- bash
     ```
-3. **Login to PostgreSQL CLI**
+3. **SQL script to create tables and insert initial records**
 
     ```bash
     psql -U <postgres-user> -d <database-name>
@@ -57,3 +57,6 @@ http://<your-ingress-domain-or-ip>/api/items
         ('Phone', 'A smart mobile device'),
         ('Tablet', 'A touchscreen device');
     ```
+
+## 🎬 Screen Recording Video
+ [Link to the video showing all objects deployed in Kubernetes cluster](https://github.com/mohitsinghgit02/NAGP_Workshop_Kubernetes_DevOps.git)
