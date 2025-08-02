@@ -10,7 +10,7 @@ def index():
     return {"sucess": True}
 
 
-@app.get("/items")
+@app.get("/api/items")
 def read_items():
     conn = psycopg2.connect(
         dbname=os.getenv("DB_NAME"),
