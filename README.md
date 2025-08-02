@@ -27,7 +27,7 @@ docker pull mohitsinghhub/k8s-multi-tier-api:v3
 Use the following endpoint to view the records from the backend tier:
 
 ```bash
-http://<your-ingress-domain-or-ip>/api/items
+http://<your-ingress-domain-or-ip>/items
 ```
 ## 🚀 How to Run
 
